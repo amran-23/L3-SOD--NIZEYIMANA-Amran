@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    background: url(Capture.PNG) ;
+    background-size: cover;
+
+
+    
+}
+.all {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 5px;
+}
+        header{
+    width: 100%;
+    margin: 0%;
+    display: flex;
+    background-color: #333;
+    margin-left: 60p;
+    
+    }
+    
+
+header nav{
+    margin-left: 20px;
+    padding-left: 600px;
+}
+header img{
+    width: 35px;
+    height: 35px;
+    margin-left: 12px;
+    border-radius: 60%;
+    background-repeat: no-repeat;
+}
+header ul li{
+    display: block;
+    background: beige;
+    float: left;
+}
+header ul li a{
+    background: beige;
+    display: block;
+    color: black;
+    padding: 8px 8px;
+    text-decoration: none;
+    font-size: 20px;
+}
+header ul{
+    list-style-type: none;
+    padding: 0%;
+    margin: 0%;
+}
+header ul li a:hover{
+    color: white;
+    background-color: green;
+    
+}
+.tty {
+            width: 420px;
+            
+            color: azure;
+            border-radius: 40px;
+            padding: 30px 40px;
+            border: 2px solid rgb(255,255, 255,0);
+            backdrop-filter: blur(64px);
+            box-shadow: 0 0 10px rgb(0, 0, 0.2);
+        }
+        .tty .button {
+            width: 100%;
+            height: 45px;
+            background: white;
+            border: none;
+            color: black;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgb(0, 0, 0.1);
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+
+        }
+        .tty .input-box {
+            position: relative;
+            width: 100%;
+            height: 50%;
+            margin: 30px 0;
+        }
+        .input-box input {
+            width: 50%;
+            height: 50%;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 2px solid rgb(255,255, 255,0.2);
+            border-radius: 50px;
+            font-size: 16px;
+            color: white;
+            padding: 20px 45px 20px 20px;
+        }
+        #te {
+            background: transparent;
+        }
+        .contact {
+            background-color: orange;
+            font-size: 19px;
+            width: 500px;
+            height: 400px;
+        }
+        .contact a {
+            text-decoration: none;
+            border-radius: 20px;
+            background-color: blue;
+            color: white;
+            padding: 20px;
+            
+        }
+        p {
+            font-size: 26px;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+       .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+        }
+        .footer div {
+            flex: 1;
+            margin: 0 10px;
+        }
+        .footer h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .footer .copyright {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="amran.jpg" alt="Logo">
+        <h1 style="margin-top: 0%; color: orange;">my portifolio</h1>
+        <nav role="navigation">
+            <ul class="link">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>  
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact me.html">Contact me</a></li>
+            </ul>
+    </header>
+    <div class="all">
+    <div class="tty">
+        <h1>login</h1>
+        <form action="#">
+            <div class="input-box">
+            <br><label for="Name">Name:</label>
+            <input type="text"  name="Name" placeholder="your name" required><br>
+            </div>
+            <div class="input-box">
+            <br><label for="EMAIL">EMAIL address</label>
+            <input type="text" name="EMAIL address" placeholder="enter your email" required><br>
+            </div>
+            <br><label for="message">message:</label>
+            <textarea name="" id="te" placeholder="enter message"></textarea><br><br>
+            <button type="submit" class="button">send</button>
+        </form>
+    </div>
+        <div class="contact">
+            <h1>CONTANT INFORMATION</h1>
+            <P>Email address:nizeyimanaamran05@gmail.com</P>
+            <p>Phone number:+250 780 923 647</p>
+            <p>phyisical address:Nyarugenge,Rwesero,kn 258st</p>
+            <br>
+           <a href="https://www.instagram.com">ig account</a>
+            <a href="https://www.github.com"> github account</a>
+            <br>
+        </div>
+
+</div>
+<footer class="footer">
+    <div>
+        <h3>my portifolio</h3>
+        <p>Rwanda, NYARUGENGE district, street kN 258st</p>
+        <p>Phone: 0780923647</p>
+        <p>Email: amranprince05@gmail.com</p>
+    </div>
+    <div>
+        <h3>Our Services</h3>
+        <a href="#">web development</a>
+        <a href="#">graphic design</a>
+        <a href="#">fronted development</a>
+        <a href="#">content creation</a>
+    </div>
+    <div>
+        <h3>Follow Us</h3>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+    </div>
+</footer>
+<div class="copyright">
+    &copy; 2024 copyright Kira Clinic LTD
+</div>
+</body>
+</html>
